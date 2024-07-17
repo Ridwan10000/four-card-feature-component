@@ -1,0 +1,177 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+:root {
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+
+
+    --clr-very-light-grey: hsl(0, 0%, 98%);
+    --clr-grayish-blue: hsl(229, 6%, 66%);
+    --clr-very-dark-blue: hsl(234, 12%, 34%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+.container {
+    width: 90vw;
+    max-width: 1000px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-grayish-blue)
+}
+
+.reliable-heading {
+    font-size: 1.5rem;
+    margin-top: 80px;
+    color: var(--clr-very-dark-blue);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.technology-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--clr-very-dark-blue);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.description {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards img {
+    margin-left: 75%;
+
+}
+
+.cards h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.1rem;
+    color: var(--clr-very-dark-blue);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.cards p {
+    margin-bottom: 0.9rem;
+}
+
+.common-card-styles {
+    width: 85%;
+    padding: 20px;
+    margin: 0 auto 1.2rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 2px 10px 0.5px grey;
+    border-top: 4px solid;
+}
+
+.supervisor-card {
+    border-color: var(--clr-cyan);
+}
+
+.team-builder-card {
+    border-color: var(--clr-red);
+
+}
+
+.karma-card {
+    border-color: var(--clr-orange);
+
+}
+
+.calculator-card {
+    border-color: var(--clr-blue);
+}
+
+
+@media screen and (min-width:1080px) {
+    .container {
+        border: 1px solid black;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .common-card-styles {
+        width: 80%;
+    }
+
+    .supervisor-card {
+        grid-row: 2 / 3;
+
+    }
+}
