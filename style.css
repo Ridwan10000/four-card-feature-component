@@ -160,7 +160,10 @@ h6 {
     .container {
         border: 1px solid black;
     }
-
+    .description{
+        width:55%;
+        margin-bottom: 2rem;
+    }
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
