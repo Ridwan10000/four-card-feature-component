@@ -157,9 +157,9 @@ h6 {
 
 
 @media screen and (min-width:1080px) {
-    .container {
-        border: 1px solid black;
-    }
+  .container{
+    width: min(80%, 1000px);
+  }
     .description{
         width:55%;
         margin-bottom: 2rem;
